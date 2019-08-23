@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Forms</title>    
+</head>
+<body>
+    <h1>АвтоОдесса</h1>
+    <form action="https://fom.in.ua/echo" method="POST">
+        <fieldset style="width: 250px; background-color: rgb(96, 196, 230, 50%);">
+            <legend style="color: rgb(50, 4, 255);">Регистрация</legend>
+            <label><strong>E-mail</strong></label><br>
+            <input type="email" name="E-mail" placeholder="Введите Ваш e-mail"/><br><br>
+
+            <label><strong>Пароль</strong></label><br>
+            <input type="password" name="password" placeholder="Придумайте пароль"/><br><br>
+
+            <label><strong>Подтверждение пароля</strong></label><br>
+            <input type="password" name="password" placeholder="Введите пароль еще раз"/><br><br>
+
+            <input type="submit" onclick="alert" name="submit" value="Регистрация"/>    
+        </fieldset>
+        <br><br>
+        <fieldset style="width: 250px; background-color: rgba(109, 202, 106, 0.5);">
+            <legend style="color: rgb(4, 68, 18);">Авторизация</legend>
+            <label><strong>E-mail</strong></label><br>
+            <input type="email" name="E-mail" placeholder="Введите Ваш e-mail"/><br><br>
+
+            <label><strong>Пароль</strong></label><br>
+            <input type="password" name="password" placeholder="Введите Ваш пароль"/><br><br>
+            
+            <input type="submit" onclick="alert" name="submit" value="Войти"/>    
+        </fieldset>
+    </form>
+    <br><br>
+    <form action="https://fom.in.ua/echo" method="GET">
+        <fieldset style="width: 250px">
+            <legend style="color: rgb(127, 127, 128);">Параметры автомобиля</legend>
+            <strong>Выберите тип кузова</strong><br><br>
+            <input type="radio" name="car_body" value="sedan"/>Седан<br>
+            <input type="radio" name="car_body" value="hatchback"/>Хэтчбэк<br>
+            <input type="radio" name="car_body" value="pickup"/>Пикап<br>
+        <br>
+            <strong>Выберите марку автомобиля</strong><br><br>
+            <input type="checkbox" name="model" value="vw"/>Volkswagen<br>
+            <input type="checkbox" name="model" value="bmw"/>BMW<br>
+            <input type="checkbox" name="model" value="audi"/>Audi<br>
+        <br>     
+            <strong>Выберите страну-производителя</strong><br><br>
+            <input type="checkbox" name="producer" value="germany"/>Германия<br>
+            <input type="checkbox" name="producer" value="china"/>Китай<br>
+            <input type="checkbox" name="producer" value="ukr"/>Украина<br>
+            <input type="checkbox" name="producer" value="rus"/>Росиия<br>
+        <br>
+            <strong>Выберите цену</strong><br><br>
+            0 - 100000<br>
+            <input type="range" name="points" min="0" max="100000" step="1" value="50"/>
+            <br>Цена USD<br>
+        <br>
+            <strong>Выберите год выпуска</strong><br><br>
+            От: <input type="number" name="quantity" min="1990" max="2019">
+            До: <input type="number" name="quantity" min="1990" max="2019"><br>
+        <br>
+            <strong>Выберите тип топлива</strong><br><br>
+            <input type="radio" name="fuel" value="benzin"/>Бензин<br>
+            <input type="radio" name="fuel" value="diezel"/>Дизель<br>
+            <input type="radio" name="fuel" value="gas"/>Газ<br>
+        <br>
+            <strong>Выберите тип коробки передач</strong><br><br>
+            <input type="radio" name="transmission" value="mechanic"/>МКП<br>
+            <input type="radio" name="transmission" value="auto"/>АКП<br>
+        <br>
+            <strong>Выберите цвет:  </strong>
+            <input type="color" name="choose_color" value="#ff0000"><br><br>    
+        <br> 
+            <strong>Выберите дополнительные опции</strong><br><br>
+            <input type="checkbox" name="additional" value="luk"/>Люк<br>
+            <input type="checkbox" name="additional" value="safe"/>Подушка безопасности<br>
+            <input type="checkbox" name="additional" value="leather"/>Кожаный салон<br>
+        <br>
+        <input type="submit" onclick="alert" name="submit" value="Подобрать автомобиль"/>
+    </form>
+</body>
+</html>
